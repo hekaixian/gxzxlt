@@ -1,0 +1,26 @@
+.postfile {
+	width:800px;
+	height:650px;
+}
+.postfile .bbs {
+	width:780px;
+	margin:15px 0;
+	border-bottom:1px solid #c0c0c0;
+}
+.postfile a {
+	text-decoration: none;
+	color:#3399ea;
+}
+.postfile p {
+	margin:10px 0;
+}
+.postfile .bbs span {
+	float:right;
+}
+.contentless {
+	max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#808080;
+}

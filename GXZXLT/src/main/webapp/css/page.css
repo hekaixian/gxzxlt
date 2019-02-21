@@ -1,0 +1,46 @@
+.page {
+	width:800px;
+	height:50px;
+}
+.page_1 {
+	float:right;
+	margin:0 20px;
+}
+.page button {
+	height: 28px;
+	border-radius:4px;
+	border-style:none;
+	margin:0 3px;
+	background: transparent;
+	font-size:16px;
+	color:#3399ea;
+}
+.page_2 {
+	margin-left:20px;
+}
+.page button:hover {
+	cursor:pointer;
+}
+.page buttons {
+	width: 130px;
+    height: 40px;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+
+    /* Just for presentation */  
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

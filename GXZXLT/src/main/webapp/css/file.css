@@ -1,0 +1,16 @@
+.post span {
+	float:right;
+	margin-right:30px;
+}
+.post h3 {
+	color:#3399ea;
+	margin:15px 0;
+}
+.post p {
+	margin:15px 0;
+	color:#808080;
+}
+.post a {
+	text-decoration: none;
+	color:#ff0000;
+}

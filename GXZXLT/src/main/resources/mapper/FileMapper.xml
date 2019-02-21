@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xian.hkx.gxzx.dao.FileDao" >
+  <select id="getAllFiles" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file order by uploadtime desc
+  </select>
+  <select id="getAllFilesByDownCount" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file order by loadcount desc,uploadtime desc
+  </select>
+  <select id="getFilesByUserId" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file where userid=#{userid} order by uploadtime desc
+  </select>
+  <select id="getAllFilesByUserid" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file where userid=#{userid} order by uploadtime desc limit #{pageno}, #{pagesize}
+  </select>
+  <select id="getAllFilesByPagenum" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file order by uploadtime desc limit #{pageno}, #{pagesize}
+  </select>
+  <select id="getFile" resultType="com.xian.hkx.gxzx.entities.Files">
+    select id, userid, filepath, uploadtime, title, filedescribe, loadcount from tb_file where id=#{gid}
+  </select>
+  <insert id="addFile" parameterType="com.xian.hkx.gxzx.entities.Files">
+    insert into tb_file(userid, filepath, uploadtime, title, filedescribe, loadcount) values(#{userid}, #{filepath}, #{uploadtime}, #{title}, #{filedescribe}, #{loadcount})
+  </insert>
+  <select id="getCountFileByUserid" resultType="integer">
+    select count(*) from tb_file where userid=#{userid}
+  </select>
+   <select id="getCountFiles" resultType="integer">
+    select count(*) from tb_file 
+  </select>
+  <update id="updateFile" parameterType="com.xian.hkx.gxzx.entities.Files">
+      update tb_file set loadcount=#{loadcount}
+      where id=#{id}
+   </update>
+</mapper>

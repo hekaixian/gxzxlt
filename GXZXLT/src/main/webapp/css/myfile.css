@@ -1,0 +1,39 @@
+.filemeun {
+	width:800px;
+	height:30px;
+}
+.filebody {
+	width:800px;
+	height:620px;
+}
+.filebody .bbs {
+	width:780px;
+	margin:15px 0;
+	border-bottom:1px solid #c0c0c0;
+}
+.filebody a {
+	text-decoration: none;
+	color:#3399ea;
+}
+.filebody p {
+	margin:10px 0;
+}
+.filebody .bbs span {
+	float:right;
+}
+.contentless {
+	max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#808080;
+}
+.filemeun button {
+	margin-right:5px;
+	border-radius:3px;
+	font-size:15px;
+	background-color:#e4e9ec;
+}
+.filemeun button:hover {
+	cursor:pointer;
+}

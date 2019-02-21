@@ -1,0 +1,83 @@
+.text {
+	height:630px;
+}
+.titlehead {
+	height:50px;
+	margin-bottom:20px;
+}
+.title {
+	margin:0 auto;
+	text-align:center;
+}
+.name {
+	float: right;
+	margin-right:20px;
+}
+.time {
+	float: right;
+	margin-right:50px;
+}
+.text_1 {
+	height:560px;
+	overflow-y:auto;
+}
+.bbscontent {
+	padding:0 20px;
+}
+.newComment {
+	padding:20px 20px;
+	font-weight:bold;
+}
+.comments {
+	padding:0 20px;
+}
+.getmore a {
+	width:80px;
+	margin:0 auto;
+	display:block;
+}
+
+.comment {
+	height:70px;
+	padding:0 40px;
+}
+.comment_1 {
+	float: left;
+	line-height:70px;
+}
+textarea {
+	width:500px;
+	height:68px;
+	wrap:physical;
+	font-size:20px;
+	resize:none;
+	padding:0 10px;
+	border:1px solid #ccc;
+	border-radius:6px;
+	outline:none;
+}
+.comment_2 {
+	float: left;
+}
+.comment_3 {
+	width:100px;
+	float: left;
+	text-align:center;
+    margin-top:25px;	
+}
+.toPostComment {
+	height:25px;
+	background-color:#b60b14;
+	color:#fff;
+	border-radius:4px;
+	white-space:nowrap;
+	font-size:16px;
+	padding:0 16px;
+	border:none;
+	cursor:pointer;
+	font-family:inherit;
+	line-height:inherit;
+	-webkit-appearance:button;
+	text-transform:none;
+	overflow:visible;
+}

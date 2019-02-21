@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xian.hkx.gxzx.dao.UserDao" >
+   <select id="getAllUsersCount" resultType="integer">
+      select count(*) from tb_user
+   </select>
+   <select id="getUserByNameAndpwd" resultType="com.xian.hkx.gxzx.entities.User">
+      select id, loginname, password, username, type, actionauthority from tb_user where loginname=#{loginname} and password=#{password}
+   </select>
+   <select id="getUserById" resultType="com.xian.hkx.gxzx.entities.User">
+      select id, loginname, password, username, type, actionauthority from tb_user where id=#{id}
+   </select>
+   <insert id="addUser" parameterType="com.xian.hkx.gxzx.entities.User">
+      insert into tb_user(loginname, password, username, type, actionauthority) values(#{loginname}, #{password}, #{username}, #{type}, #{actionauthority})
+   </insert>
+   <delete id="deleteUser">
+      delete from tb_user where id=#{id}
+   </delete>
+   <update id="updateUser" parameterType="com.xian.hkx.gxzx.entities.User">
+      update tb_user set loginname=#{loginname}, password=#{password}, username=#{username}, type=#{type}, actionauthority=#{actionauthority}
+      where id=#{id}
+   </update>
+   <update id="updatePwdById">
+      update tb_user set password=#{password} where id=#{id}
+   </update>
+   <select id="getAllUserByPageno" resultType="com.xian.hkx.gxzx.entities.User">
+      select id, loginname, password, username, type, actionauthority from tb_user order by type, id desc limit #{pageno}, #{pagesize}
+   </select>
+   <select id="getUserByLoginname" resultType="com.xian.hkx.gxzx.entities.User">
+      select id, loginname, password, username, type, actionauthority from tb_user where loginname=#{loginname} 
+   </select>
+</mapper>

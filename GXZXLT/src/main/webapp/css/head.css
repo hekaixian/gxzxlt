@@ -1,0 +1,74 @@
+
+body {width:100%;height:100%;}
+.logo {
+	width:100%;
+	height:70px;
+	background: linear-gradient(#d6f2ae, #e4e9ec);
+}
+.logoname {
+	height:70px;
+	width:1100px;
+	margin:0 auto;
+}
+h2 {
+	height: 70px;
+    line-height: 70px;
+}
+.head {
+	width:100%;
+	height:50px;
+	background-color: #e4e9ec;
+}
+.tabs {
+	height:50px;
+	width:1100px;
+	margin:0 auto;
+}
+.navigation {
+	height:50px;
+    float: left;
+}
+.quit {
+	height:50px;
+	float: right;
+}
+.head a {
+	text-decoration: none;
+	line-height:50px;
+	margin-right:10px;
+}
+.first {
+	color: #000000; 
+}
+.myfile {
+	color: #000000; 
+}
+.filecenter {
+	color: #000000; 
+}
+.posting {
+	color: #000000; 
+}
+.changepwd {
+	color: #000000; 
+}
+.usermanager {
+	color: #000000; 
+}
+.logout {
+	color: #000000; 
+}
+.uploadfile {
+	color: #000000; 
+}
+
+.head a:hover {
+	color:#ff0000;
+}
+.user {
+	margin-right:15px;
+	line-height:50px;
+}
+.changecolor {
+	color:#ff0000;
+}

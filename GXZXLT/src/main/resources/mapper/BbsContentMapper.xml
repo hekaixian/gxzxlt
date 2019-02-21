@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xian.hkx.gxzx.dao.BbsContentDao" >
+   <insert id="addBbsContent" parameterType="com.xian.hkx.gxzx.entities.BbsContent">
+    insert into tb_bbs_content(bbsid, content) values(#{bbsid}, #{content})
+   </insert>
+   <select id="getBbsContent" resultType="com.xian.hkx.gxzx.entities.BbsContent">
+    select id, bbsid, content from tb_bbs_content where bbsid=#{bbsid}
+  </select>
+  <delete id="deleteContent">
+      delete from tb_bbs_content where bbsid=#{bbsid}
+   </delete>
+</mapper>

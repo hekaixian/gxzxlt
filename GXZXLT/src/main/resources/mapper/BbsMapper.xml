@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xian.hkx.gxzx.dao.BbsDao" >
+  <select id="getAllBbss" resultType="com.xian.hkx.gxzx.entities.Bbs">
+    select id, userid, title, replycount, createtime, overhead from tb_bbs where overhead=0 order by createtime desc limit #{pageno}, #{pagesize}
+  </select>
+  <select id="getBbsById" resultType="com.xian.hkx.gxzx.entities.Bbs">
+    select id, userid, title, replycount, createtime, overhead from tb_bbs where id=#{id}
+  </select>
+  <select id="getAllBbssByUserid" resultType="com.xian.hkx.gxzx.entities.Bbs">
+    select id, userid, title, replycount, createtime, overhead from tb_bbs where userid=#{userid} order by createtime desc limit #{pageno}, #{pagesize}
+  </select>
+  <select id="getOverHeadBbss" resultType="com.xian.hkx.gxzx.entities.Bbs">
+    select id, userid, title, replycount, createtime, overhead from tb_bbs where overhead=1 order by createtime desc
+  </select>
+  <select id="getCountOfAllBbs" resultType="integer">
+    select count(*) from tb_bbs
+  </select>
+  <select id="getCountOfAllBbsByUserid" resultType="integer">
+    select count(*) from tb_bbs where userid=#{userid}
+  </select>
+  <insert id="addBbs" parameterType="com.xian.hkx.gxzx.entities.Bbs" useGeneratedKeys="true" keyProperty="id">
+    insert into tb_bbs(userid, title, replycount, createtime, overhead) values(#{userid}, #{title}, #{replycount}, #{createtime}, #{overhead})
+  </insert>
+  <update id="updateBbs" parameterType="com.xian.hkx.gxzx.entities.Bbs">
+      update tb_bbs set userid=#{userid}, title=#{title}, replycount=#{replycount}, createtime=#{createtime}, overhead=#{overhead}
+      where id=#{id}
+   </update>
+   <delete id="deleteBbs">
+      delete from tb_bbs where id=#{id}
+   </delete>
+</mapper>

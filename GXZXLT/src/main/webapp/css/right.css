@@ -1,0 +1,41 @@
+
+.lists {
+	width:299px;
+	height:700px;
+	float: left;
+}
+.fileList {
+	width:299px;
+	height:350px;
+	padding-left:20px;
+}
+.postList {
+	width:299px;
+	height:350px;
+	padding-left:20px;
+}
+.newupload {
+	width:64px;
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.downLists {
+	width:80px;
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.lists a {
+	width:150px;
+	color: #3399ea; 
+	text-decoration: none;
+}
+.lists span {
+	float: right;
+}
+.lists a:hover {
+	text-decoration: underline;
+}

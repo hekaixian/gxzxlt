@@ -1,0 +1,134 @@
+.postusers {
+	width:800px;
+	height:595px;
+}
+.postusers span {
+	color:#808080;
+}
+.addmenu {
+	margin:10px 0 0 0;
+	width:800px;
+	height:28px;
+}
+.addPage {
+	width:300px;
+	height:200px;
+	border:1px solid #c0c0c0;
+	border-radius:25px;
+	position:fixed;
+	left:600px;
+	top:200px;
+	padding:20px 0;
+	background-color: #edf3f3;
+}
+.upDatePage {
+	width:300px;
+	height:250px;
+	border:1px solid #c0c0c0;
+	border-radius:25px;
+	position:fixed;
+	left:600px;
+	top:200px;
+	padding:20px 0;
+	background-color: #edf3f3;
+}
+.addPage p {
+	margin:10px 25px;
+}
+.upDatePage p {
+	margin:10px 25px;
+}
+.addPage input {
+	height:25px;
+	width:150px;
+	font-size:16px;
+	padding:0 10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	outline:none;
+}
+.upDatePage input {
+	height:25px;
+	width:150px;
+	font-size:16px;
+	padding:0 10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	outline:none;
+}
+.tohide {
+	pointer-events: none;
+	opacity:0.5;
+}
+.usermenu {
+	width:780px;
+	border-bottom:1px solid #c0c0c0;
+	margin:10px 0 0 0;
+	pading:10px 0;
+}
+.usermenu span {
+	margin:10px 80px 10px 0;
+}
+.addUser {
+	height:25px;
+	display:block;
+	background-color:#b60b14;
+	color:#fff;
+	border-radius:4px;
+	white-space:nowrap;
+	font-size:16px;
+	padding:0 10px;
+	border:none;
+	cursor:pointer;
+	font-family:inherit;
+	line-height:inherit;
+	-webkit-appearance:button;
+	text-transform:none;
+	overflow:visible;
+}
+.allusers {
+	width:780px;
+	border-bottom:1px solid #c0c0c0;
+	padding:10px 0;
+	position: relative;
+}
+.allusers a {
+	margin:0 10px;
+	text-decoration: none;
+	color:#3399ea;
+	float:right;
+}
+.span_2 {
+	position: absolute;
+	left:95px;
+}
+.span_3 {
+	position: absolute;
+	left:224px;
+}
+.span_4 {
+	position: absolute;
+	left:352px;
+}
+.span_5 {
+	position: absolute;
+	left:495px;
+}
+.thebutton {
+	display:block;
+	background-color:#b60b14;
+	color:#fff;
+	border-radius:4px;
+	white-space:nowrap;
+	font-size:16px;
+	padding:0 5px;
+	border:none;
+	cursor:pointer;
+	font-family:inherit;
+	line-height:inherit;
+	-webkit-appearance:button;
+	text-transform:none;
+	overflow:visible;
+	float:left;
+	margin:10px 40px;
+}

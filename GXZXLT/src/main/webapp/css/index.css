@@ -1,0 +1,26 @@
+.postbbs {
+	width:800px;
+	height:650px;
+}
+.bbs {
+	width:780px;
+	margin:15px 0;
+	border-bottom:1px solid #c0c0c0;
+}
+.postbbs a {
+	text-decoration: none;
+	color:#3399ea;
+}
+.postbbs p {
+	margin:10px 0;
+}
+.bbs span {
+	float:right;
+}
+.contentless {
+	max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#808080;
+}
